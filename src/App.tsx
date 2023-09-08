@@ -71,6 +71,7 @@ function App() {
     // wait for firebase / 로그인되어 있으면 파이어베이스가 우리가 누군지, 어떤 사용자인지 알 수 있다
     // 인증상태가 준비되었는지를 기다림
     // authStateReady이게 무엇이냐면 최초인증상태가 완료될때 실행되는 promise를 return함(파이어베이스가 쿠키와 토큰을 읽고  백과의 소통해서 로그인 여부를 확인하는동안 기다리겟다 이거쥐~)
+    //사용자가 로그인 유무 파악, 누구인지에 대한 정보를 기다림
     await auth.authStateReady();
   //  setTimeout(() => setIsLoading(false), 2000)
     setIsLoading(false)
